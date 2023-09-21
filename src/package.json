@@ -1,0 +1,27 @@
+{
+  "name": "search_country",
+  "version": "1.0.0",
+  "description": "Avaliação da segunda sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Compass-pb-aws-2023-FURG-IFRS-UFFS/sprint-2-pb-aws-furg-ifrs-uffs.git"
+  },
+  "author": "Josue Fernandes, Felipe Marzani, Cristofer Gaier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Compass-pb-aws-2023-FURG-IFRS-UFFS/sprint-2-pb-aws-furg-ifrs-uffs/issues"
+  },
+  "homepage": "https://github.com/Compass-pb-aws-2023-FURG-IFRS-UFFS/sprint-2-pb-aws-furg-ifrs-uffs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^3.1.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

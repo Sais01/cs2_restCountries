@@ -1,0 +1,64 @@
+<main>
+  <div class="country">
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="./">
+            <a href="./"><img src="/img/flagIconHtml.png" alt="Logo" width="30" height="24"></a>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Search Country</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </div>
+
+  <div class="espaco">
+  <nav style="--bs-breadcrumb-divider: '>'; margin-top: 1rem;" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="./">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{name.common}}</li>
+    </ol>
+  </nav>
+  </div>
+
+  <div class="card_country">
+  <img src={{flags.svg}} alt={{flags.alt}}/>
+
+  <div class="texto_country">
+    <div class="nome">{{name.common}}</div>
+    <br>
+
+    <table>
+
+      <tr>
+        <td><div><b>Official Name: </b>{{name.official}}</div></td>
+        <td><div><b>Population: </b>{{population}}</div></td>
+      </tr>
+
+      <tr>
+        {{#if capital.[0]}}
+          <td><div><b>Capital: </b>{{capital.[0]}}</div></td>
+          <td><div><b>Continents: </b>{{continents}}</div></td>
+        {{/if}}
+      </tr>
+
+      <tr>
+        {{#each currencies}}
+          {{#if @first}}
+          <td><div><b>Currencie name: </b>{{this.name}}</div></td>
+          <td><div><b>Currencie symbol: </b>{{this.symbol}}</div></td>
+          {{/if}}
+        {{/each}}
+      </tr>
+
+    </table>
+  </div>
+  </div>
+</main>
